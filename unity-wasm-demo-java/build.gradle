@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.liziyi0914'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'cn.hutool:hutool-all:5.8.16'
+    implementation "io.github.kawamuray.wasmtime:wasmtime-java:0.19.0"
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
